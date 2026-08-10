@@ -359,22 +359,26 @@
         <!-- Interactive Contact Form -->
         <div class="info-card">
           <h3 style="font-size: 24px; margin-bottom: 20px; color: var(--sertic-navy);">Envíanos un Mensaje</h3>
-          <form id="contact-form">
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f699024e-c519-479d-9711-8238f5ea91d8">
+            <input type="hidden" name="from_name" value="Web SERTIC Contacto">
+            <input type="hidden" name="subject" value="Nuevo Mensaje de Cliente - Web SERTIC">
+
             <div style="margin-bottom: 16px;">
-              <input type="text" id="form-name" placeholder="Tu Nombre Completo" required
+              <input type="text" name="name" id="form-name" placeholder="Tu Nombre Completo" required
                 style="width: 100%; padding: 14px; background: var(--sertic-blue-ice); border: 1px solid var(--border-light); border-radius: 8px; color: var(--sertic-navy); font-weight: 600;">
             </div>
             <div style="margin-bottom: 16px;">
-              <input type="tel" id="form-phone" placeholder="Número de Teléfono / WhatsApp" required
+              <input type="tel" name="phone" id="form-phone" placeholder="Número de Teléfono / WhatsApp" required
                 style="width: 100%; padding: 14px; background: var(--sertic-blue-ice); border: 1px solid var(--border-light); border-radius: 8px; color: var(--sertic-navy); font-weight: 600;">
             </div>
             <div style="margin-bottom: 20px;">
-              <textarea id="form-msg" rows="4"
+              <textarea name="message" id="form-msg" rows="4"
                 placeholder="Describe lo que necesitas (Laptops, Impresoras, Instalación de Cámaras)..." required
                 style="width: 100%; padding: 14px; background: var(--sertic-blue-ice); border: 1px solid var(--border-light); border-radius: 8px; color: var(--sertic-navy); font-weight: 600;"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%;">
-              <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+              <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje a Correo
             </button>
           </form>
         </div>

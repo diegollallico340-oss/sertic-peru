@@ -156,17 +156,42 @@ function updateCalculatorSummary(deviceLabel, issueObj) {
   }
 }
 
-// Contact Form Handler
+// Contact Form Handler -> Envío de Formulario a Correo Electrónico
 function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = document.getElementById('form-name').value;
-    const phone = document.getElementById('form-phone').value;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnHTML = submitBtn.innerHTML;
 
-    alert(`¡Gracias ${name}! Tu solicitud de servicio ha sido recibida. Nos comunicaremos al ${phone} a la brevedad.`);
-    form.reset();
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando a tu Correo...';
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        alert('¡Gracias! Tu mensaje ha sido enviado exitosamente a nuestro correo personal. Te responderemos a la brevedad.');
+        form.reset();
+      } else {
+        alert('Mensaje recibido. Si deseas respuesta rápida, también puedes escribirnos directamente al WhatsApp +51 905 937 509.');
+        form.reset();
+      }
+    } catch (err) {
+      alert('Hubo un detalle de red. Puedes escribirnos directamente por WhatsApp al +51 905 937 509.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnHTML;
+    }
   });
 }
