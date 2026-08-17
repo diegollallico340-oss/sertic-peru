@@ -896,13 +896,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--sertic-navy);
   transition: var(--transition);
 }
 
 .brand-logo-icon svg {
-  height: 28px;
+  max-height: 32px;
   width: auto;
+  max-width: 110px;
 }
 
 .brand-info {
