@@ -976,11 +976,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
-.hero-3d-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
-  align-items: center;
+.hero-3d-single-content {
+  max-width: 680px;
 }
 
 .hero-badge-glow {
