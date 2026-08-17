@@ -809,12 +809,25 @@ h1, h2, h3, h4, h5, h6 {
    Brands Marquee Section (Logos Only)
    ========================================================================== */
 .brands-section {
-  padding: 24px 0;
+  padding: 34px 0 38px 0;
   background: linear-gradient(180deg, #FFFFFF 0%, var(--sertic-blue-ice) 100%);
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
   overflow: hidden;
   position: relative;
+}
+
+.brands-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.brands-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--sertic-navy);
+  letter-spacing: -0.2px;
 }
 
 .brands-marquee-wrapper {
