@@ -806,39 +806,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   Brands Marquee Section
+   Brands Marquee Section (Logos Only)
    ========================================================================== */
 .brands-section {
-  padding: 40px 0 50px 0;
+  padding: 24px 0;
   background: linear-gradient(180deg, #FFFFFF 0%, var(--sertic-blue-ice) 100%);
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
   overflow: hidden;
   position: relative;
-}
-
-.brands-header {
-  text-align: center;
-  margin-bottom: 26px;
-}
-
-.brands-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 16px;
-  border-radius: var(--radius-full);
-  background: var(--sertic-blue-light);
-  color: var(--sertic-blue-dark);
-  font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.brands-title {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--sertic-navy);
 }
 
 .brands-marquee-wrapper {
@@ -848,14 +824,14 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .brands-marquee-track {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: brandsScroll 35s linear infinite;
+  animation: brandsScroll 32s linear infinite;
 }
 
 .brands-marquee-wrapper:hover .brands-marquee-track {
@@ -874,8 +850,8 @@ h1, h2, h3, h4, h5, h6 {
 .brand-pill {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 12px 24px;
+  justify-content: center;
+  padding: 12px 28px;
   background: #FFFFFF;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
@@ -883,16 +859,18 @@ h1, h2, h3, h4, h5, h6 {
   transition: var(--transition);
   flex-shrink: 0;
   user-select: none;
+  min-width: 130px;
+  height: 56px;
 }
 
 .brand-pill:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-md);
   border-color: var(--sertic-blue);
 }
 
 .brand-logo-icon {
-  height: 32px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -905,49 +883,22 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 110px;
 }
 
-.brand-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.brand-name {
-  font-family: 'Outfit', sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  color: var(--sertic-navy);
-  line-height: 1.1;
-}
-
-.brand-cat {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-/* Brand specific hover accents */
-.brand-hp:hover .brand-logo-icon { color: #0096D6; }
-.brand-dell:hover .brand-logo-icon { color: #0076CE; }
-.brand-lenovo:hover .brand-logo-icon { color: #E2231A; }
-.brand-asus:hover .brand-logo-icon { color: #00539B; }
-.brand-epson:hover .brand-logo-icon { color: #003399; }
-.brand-brother:hover .brand-logo-icon { color: #00205B; }
-.brand-canon:hover .brand-logo-icon { color: #CC0000; }
-.brand-hikvision:hover .brand-logo-icon { color: #D71921; }
-.brand-dahua:hover .brand-logo-icon { color: #E30613; }
-.brand-ezviz:hover .brand-logo-icon { color: #6F2B8C; }
-.brand-kingston:hover .brand-logo-icon { color: #DA291C; }
-.brand-logitech:hover .brand-logo-icon { color: #00B8FC; }
-
 @media (max-width: 768px) {
   .brands-section {
-    padding: 30px 0 40px 0;
-  }
-  .brands-title {
-    font-size: 18px;
+    padding: 18px 0;
   }
   .brand-pill {
-    padding: 10px 18px;
-    gap: 10px;
+    padding: 10px 20px;
+    min-width: 110px;
+    height: 48px;
+  }
+  .brand-logo-icon {
+    height: 28px;
+  }
+  .brand-logo-icon svg {
+    max-height: 28px;
+    max-width: 90px;
   }
 }
+
 
