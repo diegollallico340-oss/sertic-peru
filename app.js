@@ -55,8 +55,7 @@ const servicesData = {
       { id: 'pant_laptop', name: 'Pantalla Rota / Teclado / Bisagras', icon: 'fa-mobile-screen', cost: 120 },
       { id: 'ssd_laptop', name: 'Optimización + Disco SSD NVMe', icon: 'fa-bolt', cost: 40 },
       { id: 'power_laptop', name: 'No Enciende / Reparación Placa Madre', icon: 'fa-power-off', cost: 80 },
-      { id: 'format_laptop', name: 'Formateo + Backup + Antivirus Pro', icon: 'fa-bug-slash', cost: 30 },
-      { id: 'data_laptop', name: 'Recuperación de Archivos', icon: 'fa-hard-drive', cost: 100 }
+      { id: 'format_laptop', name: 'Formateo + Backup + Antivirus Pro', icon: 'fa-bug-slash', cost: 30 }
     ]
   },
   impresora: {
