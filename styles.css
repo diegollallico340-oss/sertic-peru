@@ -821,27 +821,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   Brands Marquee Section (Logos Only)
+   Brands Marquee Section (Cyber Dark Glass Design)
    ========================================================================== */
 .brands-section {
-  padding: 34px 0 38px 0;
-  background: linear-gradient(180deg, #FFFFFF 0%, var(--sertic-blue-ice) 100%);
-  border-top: 1px solid var(--border-light);
-  border-bottom: 1px solid var(--border-light);
+  padding: 40px 0 44px 0;
+  background: rgba(4, 11, 26, 0.95);
+  border-top: 1px solid rgba(0, 229, 255, 0.25);
+  border-bottom: 1px solid rgba(0, 229, 255, 0.25);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   position: relative;
 }
 
 .brands-header {
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 
 .brands-title {
   font-family: 'Outfit', sans-serif;
   font-size: 22px;
   font-weight: 800;
-  color: var(--sertic-navy);
+  color: #FFFFFF;
   letter-spacing: -0.2px;
 }
 
@@ -850,14 +851,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   overflow: hidden;
   display: flex;
-  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-  padding: 6px 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  padding: 8px 0;
 }
 
 .brands-marquee-track {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   width: max-content;
   animation: brandsScroll 32s linear infinite;
 }
@@ -879,36 +880,38 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 22px;
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 229, 255, 0.3);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 229, 255, 0.15);
   transition: var(--transition);
   flex-shrink: 0;
   user-select: none;
-  min-width: 140px;
-  height: 68px;
+  min-width: 150px;
+  height: 70px;
 }
 
 .brand-pill:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--sertic-blue);
+  transform: translateY(-4px) scale(1.03);
+  background: #FFFFFF;
+  border-color: #00E5FF;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 229, 255, 0.5);
 }
 
 .brand-img {
-  max-height: 40px;
+  max-height: 42px;
   width: auto;
-  max-width: 115px;
+  max-width: 120px;
   object-fit: contain;
   transition: var(--transition);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }
 
 .brand-img-lg {
-  max-height: 52px;
-  max-width: 155px;
-  transform: scale(1.15);
+  max-height: 54px;
+  max-width: 160px;
+  transform: scale(1.12);
 }
 
 .brand-pill:hover .brand-img {
@@ -916,7 +919,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-pill:hover .brand-img-lg {
-  transform: scale(1.22);
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
