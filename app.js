@@ -83,7 +83,9 @@ const servicesData = {
     issues: [
       { id: 'mant_server', name: 'Mantenimiento Servidor / Mac', icon: 'fa-server', cost: 120 },
       { id: 'net_server', name: 'Configuración Red & Backup Corporativo', icon: 'fa-network-wired', cost: 150 },
-      { id: 'raid_server', name: 'Reparación Hardware / Arreglo RAID', icon: 'fa-database', cost: 200 }
+      { id: 'raid_server', name: 'Reparación Hardware / Arreglo RAID', icon: 'fa-database', cost: 200 },
+      { id: 'mac_format', name: 'Optimización / Formateo macOS & Windows', icon: 'fa-apple-whole', cost: 100 },
+      { id: 'mac_ssd', name: 'Ampliación SSD NVMe / Memoria RAM', icon: 'fa-bolt', cost: 90 }
     ]
   }
 };
