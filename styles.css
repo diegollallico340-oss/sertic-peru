@@ -415,6 +415,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
   background: rgba(11, 25, 56, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -423,6 +425,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 32px;
   transition: var(--transition);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.service-card .btn {
+  margin-top: auto;
 }
 
 .service-card:hover {
