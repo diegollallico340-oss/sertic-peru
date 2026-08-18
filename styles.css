@@ -237,19 +237,20 @@ h1, h2, h3, h4, h5, h6 {
   gap: 8px;
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  background: var(--accent-emerald-light);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #065F46;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  color: #34D399;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
 }
 
 .status-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent-emerald);
-  box-shadow: 0 0 10px var(--accent-emerald);
+  background: #34D399;
+  box-shadow: 0 0 12px #34D399;
   animation: pulseDot 2s infinite;
 }
 

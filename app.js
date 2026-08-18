@@ -39,7 +39,7 @@ function initMobileMenu() {
 // Dynamic Data per Device Type
 const servicesData = {
   camaras: {
-    label: 'Cámaras de Seguridad (Hikvision / Dahua / EZVIZ)',
+    label: 'Cámaras de Seguridad',
     issues: [
       { id: 'mobile_cam', name: 'Configuración Monitoreo en Celular', icon: 'fa-mobile', cost: 50 },
       { id: 'punto_cam', name: 'Instalación de Punto Nuevo de Cámara', icon: 'fa-screwdriver-wrench', cost: 100 },
